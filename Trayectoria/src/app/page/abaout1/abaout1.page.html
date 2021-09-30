@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-col>
+      <div class="ion-text-center">
+        <h3>Abaout 2</h3>
+      </div>
+    </ion-col>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card><ion-button  shape="round" color="primary" expand="block" (click)="Regresar()">Pagina Inicio</ion-button></ion-card>
+
+  <ion-card *ngFor="let item of dataJ">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="item.foto">
+      </ion-avatar>
+      <ion-label>
+        <h2>User:{{item.user}}</h2>
+        <h2>Name:{{item.nombre}}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  
+</ion-content>
