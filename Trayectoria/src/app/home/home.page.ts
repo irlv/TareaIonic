@@ -34,4 +34,8 @@ export class HomePage {
     console.log("fui a 6");
     this.router.navigate(['/abaout5']);
   }
+  pageLogin(){
+    console.log("fui a 6");
+    this.router.navigate(['/login']);
+  }
 }

@@ -35,6 +35,14 @@ const routes: Routes = [
     path: 'abaout5',
     loadChildren: () => import('./page/abaout5/abaout5.module').then( m => m.Abaout5PageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
+  },
 ];
 
 @NgModule({
